@@ -2,6 +2,8 @@
 **README.html
 code/secrets.R
 data_private/**
+code/old**
+manuscript/**
 !data_private/README.md
 
 # General OS
@@ -115,3 +117,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+Icon

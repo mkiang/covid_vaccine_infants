@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Results</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="01_results_files/libs/clipboard/clipboard.min.js"></script>
+<script src="01_results_files/libs/quarto-html/quarto.js"></script>
+<script src="01_results_files/libs/quarto-html/popper.min.js"></script>
+<script src="01_results_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="01_results_files/libs/quarto-html/anchor.min.js"></script>
+<link href="01_results_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="01_results_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="01_results_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="01_results_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="01_results_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="01_results_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="01_results_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="01_results_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="01_results_files/libs/datatables-binding-0.33/datatables.js"></script>
+<script src="01_results_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="01_results_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="01_results_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="01_results_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="01_results_files/libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="01_results_files/libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="01_results_files/libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="01_results_files/libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="01_results_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="01_results_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#set-up-and-code" id="toc-set-up-and-code" class="nav-link active" data-scroll-target="#set-up-and-code">Set up and code</a></li>
+  <li><a href="#text" id="toc-text" class="nav-link" data-scroll-target="#text">Text</a></li>
+  <li><a href="#interactive-table" id="toc-interactive-table" class="nav-link" data-scroll-target="#interactive-table">Interactive table</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Results</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="set-up-and-code" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-and-code">Set up and code</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>here() starts at /Users/mvk/Dropbox/Projects_Active/covid_vaccine_infants</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>full_data <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"vaccine_impact.RDS"</span>))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>cume_cases <span class="ot">&lt;-</span> full_data <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(population, scenario) <span class="sc">|&gt;</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">cume_estimate =</span> <span class="fu">cumsum</span>(estimate),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">cume_estimate_lower =</span> <span class="fu">cumsum</span>(lower), </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">cume_estimate_upper =</span> <span class="fu">cumsum</span>(upper)) <span class="sc">|&gt;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="do">## No vaccination</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>INFANT_HOSP_NOVAC <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span> </span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"infant"</span>, </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>           scenario <span class="sc">==</span> <span class="st">"observed"</span>,</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>           date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(cume_estimate) <span class="sc">|&gt;</span> </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">round</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">prettyNum</span>(<span class="at">big.mark =</span> <span class="st">","</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>PREGNANT_HOSP_NOVAC <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span> </span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"pregnant"</span>, </span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>           scenario <span class="sc">==</span> <span class="st">"observed"</span>,</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>           date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(cume_estimate) <span class="sc">|&gt;</span> </span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">round</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">prettyNum</span>(<span class="at">big.mark =</span> <span class="st">","</span>)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="do">## 100% vaccination</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>AVERTED_INFANT_V100 <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"infant"</span>,</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        scenario <span class="sc">==</span> <span class="st">"vaccine100"</span>,</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>        date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(label)</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>AVERTED_PREGNANT_V100 <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"pregnant"</span>,</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>        scenario <span class="sc">==</span> <span class="st">"vaccine100"</span>,</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>        date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(label)</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a><span class="do">## 50% vaccination</span></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>AVERTED_INFANT_V50 <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"infant"</span>,</span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>        scenario <span class="sc">==</span> <span class="st">"vaccine50"</span>,</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>        date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(label)</span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>AVERTED_PREGNANT_V50 <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"pregnant"</span>,</span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>        scenario <span class="sc">==</span> <span class="st">"vaccine50"</span>,</span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>        date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(label)</span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a><span class="do">## 15% vaccination</span></span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a>AVERTED_INFANT_V15 <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"infant"</span>,</span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a>        scenario <span class="sc">==</span> <span class="st">"vaccine15"</span>,</span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a>        date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(label)</span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>AVERTED_PREGNANT_V15 <span class="ot">&lt;-</span> cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(population <span class="sc">==</span> <span class="st">"pregnant"</span>,</span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>        scenario <span class="sc">==</span> <span class="st">"vaccine15"</span>,</span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>        date <span class="sc">==</span> <span class="fu">max</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a>        <span class="fu">prettyNum</span>(<span class="fu">round</span>(cume_averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(label)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="text" class="level2">
+<h2 class="anchored" data-anchor-id="text">Text</h2>
+<p>Under a scenario without COVID-19 vaccination during pregnancy, we estimated a total of 7,148 COVID-19 hospitalizations of young infants (in a population of 1.83 million) and 3,106 COVID-19 hospitalizations of pregnant persons (in a population of 3 million) over the study period of January 2024 – May 2025. Under 50% or 100% coverage of COVID-19 vaccination during pregnancy, we estimated 1,251 (95% CI: 536 - 1,823) and 2,502 (95% CI: 1,072 - 3,646) averted COVID-19 hospitalizations in young infants and 228 (95% CI: 176 - 285) and 456 (95% CI: 351 - 570) averted severe COVID-19 cases in pregnant persons, respectively. However, in scenarios of low vaccine coverage (recent vaccination uptake during pregnancy: 15%), we estimated vaccination averted 375 (95% CI: 161 - 547) COVID-19 hospitalizations in young infants and 68 (95% CI: 53 - 86) severe cases in pregnant persons. These results are sensitive to COVID-19 incidence, clinical severity, and vaccine effectiveness estimates.</p>
+</section>
+<section id="interactive-table" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-table">Interactive table</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cume_cases <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(scenario <span class="sc">!=</span> <span class="st">"observed"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(population, scenario, date, estimate, <span class="fu">starts_with</span>(<span class="st">"averted"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="sc">|&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">population_cat =</span> <span class="fu">factor</span>(population,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"infant"</span>, <span class="st">"pregnant"</span>),</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Infant (0-6 months)"</span>, <span class="st">"Pregnant"</span>),</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">ordered =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">scenario_cat =</span> <span class="fu">factor</span>(scenario,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"vaccine15"</span>, <span class="st">"vaccine50"</span>, <span class="st">"vaccine100"</span>),</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"15% vaccination"</span>, <span class="st">"50% vaccination"</span>, <span class="st">"100% vaccination"</span>),</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">ordered =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        date,</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">estimated_cases =</span> estimate,</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">averted_cases =</span> <span class="fu">sprintf</span>(<span class="st">"%s (95%% CI: %s - %s)"</span>,</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>            <span class="fu">prettyNum</span>(<span class="fu">round</span>(averted), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>            <span class="fu">prettyNum</span>(<span class="fu">round</span>(averted_lower), <span class="at">big.mark =</span> <span class="st">","</span>),</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>            <span class="fu">prettyNum</span>(<span class="fu">round</span>(averted_upper), <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(population_cat, <span class="fu">desc</span>(scenario_cat), date) <span class="sc">|&gt;</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    DT<span class="sc">::</span><span class="fu">datatable</span>(</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        <span class="at">colnames =</span> <span class="fu">c</span>(</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Population"</span>,</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Vaccine scenario"</span>,</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Date"</span>,</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Estimated cases"</span>,</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Averted cases"</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">rownames =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">filter =</span> <span class="fu">list</span>(</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>            <span class="at">position =</span> <span class="st">"top"</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a0787bb53e4003974c1c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a0787bb53e4003974c1c">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Infant (0-6 months)&quot;,&quot;Pregnant&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;15% vaccination&quot;,&quot;50% vaccination&quot;,&quot;100% vaccination&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"date\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1704499200000\" data-max=\"1745625600000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"5.16600791556728\" data-max=\"316.956\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Infant (0-6 months)","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant","Pregnant"],["100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","100% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","50% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination","15% vaccination"],["2024-01-06","2024-01-13","2024-01-20","2024-01-27","2024-02-03","2024-02-10","2024-02-17","2024-02-24","2024-03-02","2024-03-09","2024-03-16","2024-03-23","2024-03-30","2024-04-06","2024-04-13","2024-04-20","2024-04-27","2024-05-04","2024-05-11","2024-05-18","2024-05-25","2024-06-01","2024-06-08","2024-06-15","2024-06-22","2024-06-29","2024-07-06","2024-07-13","2024-07-20","2024-07-27","2024-08-03","2024-08-10","2024-08-17","2024-08-24","2024-08-31","2024-09-07","2024-09-14","2024-09-21","2024-09-28","2024-10-05","2024-10-12","2024-10-19","2024-10-26","2024-11-02","2024-11-09","2024-11-16","2024-11-23","2024-11-30","2024-12-07","2024-12-14","2024-12-21","2024-12-28","2025-01-04","2025-01-11","2025-01-18","2025-01-25","2025-02-01","2025-02-08","2025-02-15","2025-02-22","2025-03-01","2025-03-08","2025-03-15","2025-03-22","2025-03-29","2025-04-05","2025-04-12","2025-04-19","2025-04-26","2024-01-06","2024-01-13","2024-01-20","2024-01-27","2024-02-03","2024-02-10","2024-02-17","2024-02-24","2024-03-02","2024-03-09","2024-03-16","2024-03-23","2024-03-30","2024-04-06","2024-04-13","2024-04-20","2024-04-27","2024-05-04","2024-05-11","2024-05-18","2024-05-25","2024-06-01","2024-06-08","2024-06-15","2024-06-22","2024-06-29","2024-07-06","2024-07-13","2024-07-20","2024-07-27","2024-08-03","2024-08-10","2024-08-17","2024-08-24","2024-08-31","2024-09-07","2024-09-14","2024-09-21","2024-09-28","2024-10-05","2024-10-12","2024-10-19","2024-10-26","2024-11-02","2024-11-09","2024-11-16","2024-11-23","2024-11-30","2024-12-07","2024-12-14","2024-12-21","2024-12-28","2025-01-04","2025-01-11","2025-01-18","2025-01-25","2025-02-01","2025-02-08","2025-02-15","2025-02-22","2025-03-01","2025-03-08","2025-03-15","2025-03-22","2025-03-29","2025-04-05","2025-04-12","2025-04-19","2025-04-26","2024-01-06","2024-01-13","2024-01-20","2024-01-27","2024-02-03","2024-02-10","2024-02-17","2024-02-24","2024-03-02","2024-03-09","2024-03-16","2024-03-23","2024-03-30","2024-04-06","2024-04-13","2024-04-20","2024-04-27","2024-05-04","2024-05-11","2024-05-18","2024-05-25","2024-06-01","2024-06-08","2024-06-15","2024-06-22","2024-06-29","2024-07-06","2024-07-13","2024-07-20","2024-07-27","2024-08-03","2024-08-10","2024-08-17","2024-08-24","2024-08-31","2024-09-07","2024-09-14","2024-09-21","2024-09-28","2024-10-05","2024-10-12","2024-10-19","2024-10-26","2024-11-02","2024-11-09","2024-11-16","2024-11-23","2024-11-30","2024-12-07","2024-12-14","2024-12-21","2024-12-28","2025-01-04","2025-01-11","2025-01-18","2025-01-25","2025-02-01","2025-02-08","2025-02-15","2025-02-22","2025-03-01","2025-03-08","2025-03-15","2025-03-22","2025-03-29","2025-04-05","2025-04-12","2025-04-19","2025-04-26","2024-01-06","2024-01-13","2024-01-20","2024-01-27","2024-02-03","2024-02-10","2024-02-17","2024-02-24","2024-03-02","2024-03-09","2024-03-16","2024-03-23","2024-03-30","2024-04-06","2024-04-13","2024-04-20","2024-04-27","2024-05-04","2024-05-11","2024-05-18","2024-05-25","2024-06-01","2024-06-08","2024-06-15","2024-06-22","2024-06-29","2024-07-06","2024-07-13","2024-07-20","2024-07-27","2024-08-03","2024-08-10","2024-08-17","2024-08-24","2024-08-31","2024-09-07","2024-09-14","2024-09-21","2024-09-28","2024-10-05","2024-10-12","2024-10-19","2024-10-26","2024-11-02","2024-11-09","2024-11-16","2024-11-23","2024-11-30","2024-12-07","2024-12-14","2024-12-21","2024-12-28","2025-01-04","2025-01-11","2025-01-18","2025-01-25","2025-02-01","2025-02-08","2025-02-15","2025-02-22","2025-03-01","2025-03-08","2025-03-15","2025-03-22","2025-03-29","2025-04-05","2025-04-12","2025-04-19","2025-04-26","2024-01-06","2024-01-13","2024-01-20","2024-01-27","2024-02-03","2024-02-10","2024-02-17","2024-02-24","2024-03-02","2024-03-09","2024-03-16","2024-03-23","2024-03-30","2024-04-06","2024-04-13","2024-04-20","2024-04-27","2024-05-04","2024-05-11","2024-05-18","2024-05-25","2024-06-01","2024-06-08","2024-06-15","2024-06-22","2024-06-29","2024-07-06","2024-07-13","2024-07-20","2024-07-27","2024-08-03","2024-08-10","2024-08-17","2024-08-24","2024-08-31","2024-09-07","2024-09-14","2024-09-21","2024-09-28","2024-10-05","2024-10-12","2024-10-19","2024-10-26","2024-11-02","2024-11-09","2024-11-16","2024-11-23","2024-11-30","2024-12-07","2024-12-14","2024-12-21","2024-12-28","2025-01-04","2025-01-11","2025-01-18","2025-01-25","2025-02-01","2025-02-08","2025-02-15","2025-02-22","2025-03-01","2025-03-08","2025-03-15","2025-03-22","2025-03-29","2025-04-05","2025-04-12","2025-04-19","2025-04-26","2024-01-06","2024-01-13","2024-01-20","2024-01-27","2024-02-03","2024-02-10","2024-02-17","2024-02-24","2024-03-02","2024-03-09","2024-03-16","2024-03-23","2024-03-30","2024-04-06","2024-04-13","2024-04-20","2024-04-27","2024-05-04","2024-05-11","2024-05-18","2024-05-25","2024-06-01","2024-06-08","2024-06-15","2024-06-22","2024-06-29","2024-07-06","2024-07-13","2024-07-20","2024-07-27","2024-08-03","2024-08-10","2024-08-17","2024-08-24","2024-08-31","2024-09-07","2024-09-14","2024-09-21","2024-09-28","2024-10-05","2024-10-12","2024-10-19","2024-10-26","2024-11-02","2024-11-09","2024-11-16","2024-11-23","2024-11-30","2024-12-07","2024-12-14","2024-12-21","2024-12-28","2025-01-04","2025-01-11","2025-01-18","2025-01-25","2025-02-01","2025-02-08","2025-02-15","2025-02-22","2025-03-01","2025-03-08","2025-03-15","2025-03-22","2025-03-29","2025-04-05","2025-04-12","2025-04-19","2025-04-26"],[217.4368337730871,186.9956770448549,127.2005477572559,151.1185994722955,163.0776253298153,139.1595736147757,132.6364686015831,84.80036517150394,66.31823430079156,60.88231345646437,42.40018258575197,35.87707757255937,60.88231345646437,22.73043482849604,28.92964432717678,34.09565224274406,22.73043482849604,34.09565224274406,17.56442691292876,28.92964432717678,34.09565224274406,51.66007915567283,40.2948617414248,28.92964432717678,63.02529656992083,63.02529656992083,60.60110184696568,84.40867757255934,114.7092284960422,84.40867757255934,84.40867757255934,138.5168042216359,126.613016358839,77.91570237467018,96.31246543535619,89.81949023746704,54.10812664907652,108.216253298153,72.50488970976254,29.11670026385224,46.37104116094986,46.37104116094986,29.11670026385224,34.50868179419525,17.25434089709763,63.6253820580475,58.23340052770449,46.37104116094986,40.97905963060686,63.6253820580475,58.23340052770449,81.95811926121372,82.62599683377309,41.31299841688654,58.70794511873352,64.14386596306069,70.6669709762533,82.62599683377309,70.6669709762533,70.6669709762533,29.35397255936676,46.74891926121372,58.70794511873352,46.74891926121372,53.27202427440633,55.79288548812666,22.73043482849604,5.166007915567281,39.26166015831135,275.9775197889182,237.3406670184696,161.4468490765171,191.8043762532981,206.9831398416887,176.6256126649076,168.3462870712401,107.6312327176781,84.17314353562004,77.27370554089708,53.81561635883904,45.5362907651715,77.27370554089708,28.85016728232189,36.71839472295514,43.27525092348284,28.85016728232189,43.27525092348284,22.29331108179419,36.71839472295514,43.27525092348284,65.56856200527704,51.14347836411609,36.71839472295514,79.99364564643797,79.99364564643797,76.91678311345643,107.1340907651715,145.5924823218997,107.1340907651715,107.1340907651715,175.8097899736148,160.7011361477572,98.89300686015829,122.242744591029,114.0016606860158,68.67569920844328,137.3513984168866,92.02543693931399,36.95581187335092,58.85555224274405,58.85555224274405,36.95581187335092,43.79948073878628,21.89974036939314,80.7552926121372,73.91162374670185,58.85555224274405,52.01188337730871,80.7552926121372,73.91162374670185,104.0237667546174,104.8714575197889,52.43572875989446,74.51393034300793,81.41336833773087,89.69269393139841,104.8714575197889,89.69269393139841,89.69269393139841,37.25696517150396,59.33516675461741,74.51393034300793,59.33516675461741,67.61449234828495,70.81404696569922,28.85016728232189,6.556856200527703,49.83210712401056,316.956,272.58216,185.41926,220.28442,237.717,202.85184,193.34316,123.61284,96.67157999999999,88.74767999999999,61.80641999999999,52.29774,88.74767999999999,33.13397999999999,42.17052,49.70096999999999,33.13397999999999,49.70096999999999,25.60353,42.17052,49.70096999999999,75.3045,58.73751,42.17052,91.87148999999998,91.87148999999998,88.33775999999997,123.04188,167.21076,123.04188,123.04188,201.91488,184.56282,113.57712,140.39394,130.92918,78.873,157.746,105.68982,42.44319,67.59470999999999,67.59470999999999,42.44319,50.30304,25.15152,92.74623,84.88638,67.59470999999999,59.73486,92.74623,84.88638,119.46972,120.44328,60.22164,85.57812000000001,93.50202,103.0107,120.44328,103.0107,103.0107,42.78906000000001,68.14554,85.57812000000001,68.14554,77.65422,81.32886000000002,33.13397999999999,7.530449999999998,57.23142000000001,82.57140299999999,86.161464,71.80121999999999,61.031037,61.031037,53.850915,43.080732,50.26085399999999,43.080732,25.130427,25.130427,21.540366,17.950305,13.657146,13.657146,10.2428595,13.657146,10.2428595,10.2428595,10.2428595,13.657146,17.0714325,17.0714325,20.485719,17.0714325,27.314292,35.26143,35.26143,38.787573,49.36600199999999,52.89214499999999,59.94443099999999,49.36600199999999,52.89214499999999,45.839859,42.31371599999999,42.31371599999999,35.26143,28.209144,25.801566,25.801566,14.743752,22.11562799999999,18.42969,18.42969,14.743752,18.42969,14.743752,22.11562799999999,22.11562799999999,25.801566,33.17344199999999,35.90060999999999,28.720488,32.310549,28.720488,35.90060999999999,32.310549,25.130427,28.720488,21.540366,21.540366,17.950305,17.950305,21.540366,13.657146,13.657146,13.657146,10.2428595,102.9061515,107.380332,89.48361,76.0610685,76.0610685,67.11270750000001,53.690166,62.638527,53.690166,31.3192635,31.3192635,26.845083,22.3709025,17.020473,17.020473,12.76535475,17.020473,12.76535475,12.76535475,12.76535475,17.020473,21.27559125,21.27559125,25.5307095,21.27559125,34.04094600000001,43.945215,43.945215,48.3397365,61.52330099999998,65.9178225,74.70686549999999,61.52330099999998,65.9178225,57.12877950000001,52.73425799999999,52.73425799999999,43.945215,35.15617200000001,32.155683,32.155683,18.374676,27.56201399999999,22.968345,22.968345,18.374676,22.968345,18.374676,27.56201399999999,27.56201399999999,32.155683,41.343021,44.741805,35.793444,40.2676245,35.793444,44.741805,40.2676245,31.3192635,35.793444,26.845083,26.845083,22.3709025,22.3709025,26.845083,17.020473,17.020473,17.020473,12.76535475,117.14047545,122.2335396,101.861283,86.58209055000002,86.58209055000002,76.39596225000001,61.1167698,71.30289809999999,61.1167698,35.65144905,35.65144905,30.5583849,25.46532075,19.3748019,19.3748019,14.531101425,19.3748019,14.531101425,14.531101425,14.531101425,19.3748019,24.218502375,24.218502375,29.06220285,24.218502375,38.74960380000001,50.0238645,50.0238645,55.02625095,70.03341029999999,75.03579675,85.04056964999999,70.03341029999999,75.03579675,65.03102385000001,60.02863739999999,60.02863739999999,50.0238645,40.01909160000001,36.6035649,36.6035649,20.9163228,31.37448419999999,26.1454035,26.1454035,20.9163228,26.1454035,20.9163228,31.37448419999999,31.37448419999999,36.6035649,47.0617263,50.9306415,40.7445132,45.83757735,40.7445132,50.9306415,45.83757735,35.65144905,40.7445132,30.5583849,30.5583849,25.46532075,25.46532075,30.5583849,19.3748019,19.3748019,19.3748019,14.531101425],["117 (95% CI: 50 - 171)","101 (95% CI: 43 - 147)","68 (95% CI: 29 - 100)","81 (95% CI: 35 - 119)","88 (95% CI: 38 - 128)","75 (95% CI: 32 - 109)","71 (95% CI: 31 - 104)","46 (95% CI: 20 - 67)","36 (95% CI: 15 - 52)","33 (95% CI: 14 - 48)","23 (95% CI: 10 - 33)","19 (95% CI: 8 - 28)","33 (95% CI: 14 - 48)","12 (95% CI: 5 - 18)","16 (95% CI: 7 - 23)","18 (95% CI: 8 - 27)","12 (95% CI: 5 - 18)","18 (95% CI: 8 - 27)","9 (95% CI: 4 - 14)","16 (95% CI: 7 - 23)","18 (95% CI: 8 - 27)","28 (95% CI: 12 - 41)","22 (95% CI: 9 - 32)","16 (95% CI: 7 - 23)","34 (95% CI: 15 - 49)","34 (95% CI: 15 - 49)","33 (95% CI: 14 - 48)","45 (95% CI: 19 - 66)","62 (95% CI: 26 - 90)","45 (95% CI: 19 - 66)","45 (95% CI: 19 - 66)","75 (95% CI: 32 - 109)","68 (95% CI: 29 - 99)","42 (95% CI: 18 - 61)","52 (95% CI: 22 - 76)","48 (95% CI: 21 - 70)","29 (95% CI: 12 - 42)","58 (95% CI: 25 - 85)","39 (95% CI: 17 - 57)","16 (95% CI: 7 - 23)","25 (95% CI: 11 - 36)","25 (95% CI: 11 - 36)","16 (95% CI: 7 - 23)","19 (95% CI: 8 - 27)","9 (95% CI: 4 - 14)","34 (95% CI: 15 - 50)","31 (95% CI: 13 - 46)","25 (95% CI: 11 - 36)","22 (95% CI: 9 - 32)","34 (95% CI: 15 - 50)","31 (95% CI: 13 - 46)","44 (95% CI: 19 - 64)","44 (95% CI: 19 - 65)","22 (95% CI: 10 - 32)","32 (95% CI: 14 - 46)","35 (95% CI: 15 - 50)","38 (95% CI: 16 - 55)","44 (95% CI: 19 - 65)","38 (95% CI: 16 - 55)","38 (95% CI: 16 - 55)","16 (95% CI: 7 - 23)","25 (95% CI: 11 - 37)","32 (95% CI: 14 - 46)","25 (95% CI: 11 - 37)","29 (95% CI: 12 - 42)","30 (95% CI: 13 - 44)","12 (95% CI: 5 - 18)","3 (95% CI: 1 - 4)","21 (95% CI: 9 - 31)","59 (95% CI: 25 - 85)","50 (95% CI: 22 - 73)","34 (95% CI: 15 - 50)","41 (95% CI: 17 - 59)","44 (95% CI: 19 - 64)","37 (95% CI: 16 - 55)","36 (95% CI: 15 - 52)","23 (95% CI: 10 - 33)","18 (95% CI: 8 - 26)","16 (95% CI: 7 - 24)","11 (95% CI: 5 - 17)","10 (95% CI: 4 - 14)","16 (95% CI: 7 - 24)","6 (95% CI: 3 - 9)","8 (95% CI: 3 - 11)","9 (95% CI: 4 - 13)","6 (95% CI: 3 - 9)","9 (95% CI: 4 - 13)","5 (95% CI: 2 - 7)","8 (95% CI: 3 - 11)","9 (95% CI: 4 - 13)","14 (95% CI: 6 - 20)","11 (95% CI: 5 - 16)","8 (95% CI: 3 - 11)","17 (95% CI: 7 - 25)","17 (95% CI: 7 - 25)","16 (95% CI: 7 - 24)","23 (95% CI: 10 - 33)","31 (95% CI: 13 - 45)","23 (95% CI: 10 - 33)","23 (95% CI: 10 - 33)","37 (95% CI: 16 - 54)","34 (95% CI: 15 - 50)","21 (95% CI: 9 - 31)","26 (95% CI: 11 - 38)","24 (95% CI: 10 - 35)","15 (95% CI: 6 - 21)","29 (95% CI: 12 - 42)","20 (95% CI: 8 - 28)","8 (95% CI: 3 - 11)","12 (95% CI: 5 - 18)","12 (95% CI: 5 - 18)","8 (95% CI: 3 - 11)","9 (95% CI: 4 - 14)","5 (95% CI: 2 - 7)","17 (95% CI: 7 - 25)","16 (95% CI: 7 - 23)","12 (95% CI: 5 - 18)","11 (95% CI: 5 - 16)","17 (95% CI: 7 - 25)","16 (95% CI: 7 - 23)","22 (95% CI: 9 - 32)","22 (95% CI: 10 - 32)","11 (95% CI: 5 - 16)","16 (95% CI: 7 - 23)","17 (95% CI: 7 - 25)","19 (95% CI: 8 - 28)","22 (95% CI: 10 - 32)","19 (95% CI: 8 - 28)","19 (95% CI: 8 - 28)","8 (95% CI: 3 - 12)","13 (95% CI: 5 - 18)","16 (95% CI: 7 - 23)","13 (95% CI: 5 - 18)","14 (95% CI: 6 - 21)","15 (95% CI: 6 - 22)","6 (95% CI: 3 - 9)","1 (95% CI: 1 - 2)","11 (95% CI: 5 - 15)","18 (95% CI: 8 - 26)","15 (95% CI: 6 - 22)","10 (95% CI: 4 - 15)","12 (95% CI: 5 - 18)","13 (95% CI: 6 - 19)","11 (95% CI: 5 - 16)","11 (95% CI: 5 - 16)","7 (95% CI: 3 - 10)","5 (95% CI: 2 - 8)","5 (95% CI: 2 - 7)","3 (95% CI: 1 - 5)","3 (95% CI: 1 - 4)","5 (95% CI: 2 - 7)","2 (95% CI: 1 - 3)","2 (95% CI: 1 - 3)","3 (95% CI: 1 - 4)","2 (95% CI: 1 - 3)","3 (95% CI: 1 - 4)","1 (95% CI: 1 - 2)","2 (95% CI: 1 - 3)","3 (95% CI: 1 - 4)","4 (95% CI: 2 - 6)","3 (95% CI: 1 - 5)","2 (95% CI: 1 - 3)","5 (95% CI: 2 - 7)","5 (95% CI: 2 - 7)","5 (95% CI: 2 - 7)","7 (95% CI: 3 - 10)","9 (95% CI: 4 - 14)","7 (95% CI: 3 - 10)","7 (95% CI: 3 - 10)","11 (95% CI: 5 - 16)","10 (95% CI: 4 - 15)","6 (95% CI: 3 - 9)","8 (95% CI: 3 - 11)","7 (95% CI: 3 - 11)","4 (95% CI: 2 - 6)","9 (95% CI: 4 - 13)","6 (95% CI: 3 - 9)","2 (95% CI: 1 - 3)","4 (95% CI: 2 - 5)","4 (95% CI: 2 - 5)","2 (95% CI: 1 - 3)","3 (95% CI: 1 - 4)","1 (95% CI: 1 - 2)","5 (95% CI: 2 - 7)","5 (95% CI: 2 - 7)","4 (95% CI: 2 - 5)","3 (95% CI: 1 - 5)","5 (95% CI: 2 - 7)","5 (95% CI: 2 - 7)","7 (95% CI: 3 - 10)","7 (95% CI: 3 - 10)","3 (95% CI: 1 - 5)","5 (95% CI: 2 - 7)","5 (95% CI: 2 - 8)","6 (95% CI: 2 - 8)","7 (95% CI: 3 - 10)","6 (95% CI: 2 - 8)","6 (95% CI: 2 - 8)","2 (95% CI: 1 - 3)","4 (95% CI: 2 - 6)","5 (95% CI: 2 - 7)","4 (95% CI: 2 - 6)","4 (95% CI: 2 - 6)","5 (95% CI: 2 - 7)","2 (95% CI: 1 - 3)","0 (95% CI: 0 - 1)","3 (95% CI: 1 - 5)","18 (95% CI: 14 - 23)","19 (95% CI: 15 - 24)","16 (95% CI: 12 - 20)","13 (95% CI: 10 - 17)","13 (95% CI: 10 - 17)","12 (95% CI: 9 - 15)","9 (95% CI: 7 - 12)","11 (95% CI: 8 - 14)","9 (95% CI: 7 - 12)","6 (95% CI: 4 - 7)","6 (95% CI: 4 - 7)","5 (95% CI: 4 - 6)","4 (95% CI: 3 - 5)","3 (95% CI: 2 - 4)","3 (95% CI: 2 - 4)","2 (95% CI: 2 - 3)","3 (95% CI: 2 - 4)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","3 (95% CI: 2 - 4)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 6)","4 (95% CI: 3 - 5)","6 (95% CI: 5 - 7)","8 (95% CI: 6 - 10)","8 (95% CI: 6 - 10)","8 (95% CI: 7 - 11)","11 (95% CI: 8 - 14)","12 (95% CI: 9 - 14)","13 (95% CI: 10 - 16)","11 (95% CI: 8 - 14)","12 (95% CI: 9 - 14)","10 (95% CI: 8 - 13)","9 (95% CI: 7 - 12)","9 (95% CI: 7 - 12)","8 (95% CI: 6 - 10)","6 (95% CI: 5 - 8)","6 (95% CI: 4 - 7)","6 (95% CI: 4 - 7)","3 (95% CI: 2 - 4)","5 (95% CI: 4 - 6)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 5)","3 (95% CI: 2 - 4)","4 (95% CI: 3 - 5)","3 (95% CI: 2 - 4)","5 (95% CI: 4 - 6)","5 (95% CI: 4 - 6)","6 (95% CI: 4 - 7)","7 (95% CI: 6 - 9)","8 (95% CI: 6 - 10)","6 (95% CI: 5 - 8)","7 (95% CI: 5 - 9)","6 (95% CI: 5 - 8)","8 (95% CI: 6 - 10)","7 (95% CI: 5 - 9)","6 (95% CI: 4 - 7)","6 (95% CI: 5 - 8)","5 (95% CI: 4 - 6)","5 (95% CI: 4 - 6)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 5)","5 (95% CI: 4 - 6)","3 (95% CI: 2 - 4)","3 (95% CI: 2 - 4)","3 (95% CI: 2 - 4)","2 (95% CI: 2 - 3)","9 (95% CI: 7 - 11)","9 (95% CI: 7 - 12)","8 (95% CI: 6 - 10)","7 (95% CI: 5 - 8)","7 (95% CI: 5 - 8)","6 (95% CI: 5 - 7)","5 (95% CI: 4 - 6)","6 (95% CI: 4 - 7)","5 (95% CI: 4 - 6)","3 (95% CI: 2 - 3)","3 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","2 (95% CI: 2 - 3)","2 (95% CI: 1 - 2)","3 (95% CI: 2 - 4)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 5)","5 (95% CI: 4 - 7)","6 (95% CI: 4 - 7)","7 (95% CI: 5 - 8)","5 (95% CI: 4 - 7)","6 (95% CI: 4 - 7)","5 (95% CI: 4 - 6)","5 (95% CI: 4 - 6)","5 (95% CI: 4 - 6)","4 (95% CI: 3 - 5)","3 (95% CI: 2 - 4)","3 (95% CI: 2 - 4)","3 (95% CI: 2 - 4)","2 (95% CI: 1 - 2)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 1 - 2)","2 (95% CI: 2 - 3)","2 (95% CI: 1 - 2)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","3 (95% CI: 2 - 4)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 5)","3 (95% CI: 2 - 4)","4 (95% CI: 3 - 4)","3 (95% CI: 2 - 4)","4 (95% CI: 3 - 5)","4 (95% CI: 3 - 4)","3 (95% CI: 2 - 3)","3 (95% CI: 2 - 4)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 2)","2 (95% CI: 2 - 2)","2 (95% CI: 2 - 3)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 1)","3 (95% CI: 2 - 3)","3 (95% CI: 2 - 4)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 2 - 3)","2 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 0 - 1)","0 (95% CI: 0 - 1)","0 (95% CI: 0 - 1)","0 (95% CI: 0 - 0)","0 (95% CI: 0 - 1)","0 (95% CI: 0 - 0)","0 (95% CI: 0 - 0)","0 (95% CI: 0 - 0)","0 (95% CI: 0 - 1)","1 (95% CI: 0 - 1)","1 (95% CI: 0 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 0 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","2 (95% CI: 2 - 2)","2 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","2 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 2)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","0 (95% CI: 0 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 0 - 1)","1 (95% CI: 0 - 1)","0 (95% CI: 0 - 1)","1 (95% CI: 0 - 1)","0 (95% CI: 0 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 1 - 1)","1 (95% CI: 0 - 1)","1 (95% CI: 0 - 1)","1 (95% CI: 1 - 1)","0 (95% CI: 0 - 1)","0 (95% CI: 0 - 1)","0 (95% CI: 0 - 1)","0 (95% CI: 0 - 0)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Population<\/th>\n      <th>Vaccine scenario<\/th>\n      <th>Date<\/th>\n      <th>Estimated cases<\/th>\n      <th>Averted cases<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":3},{"name":"population_cat","targets":0},{"name":"scenario_cat","targets":1},{"name":"date","targets":2},{"name":"estimated_cases","targets":3},{"name":"averted_cases","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

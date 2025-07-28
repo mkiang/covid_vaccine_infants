@@ -1,0 +1,154 @@
+---
+title: "Results"
+format: 
+  html:
+    toc: true
+    toc-location: left
+    code-fold: true
+---
+
+## Set up and code
+```{r setup}
+library(DT)
+library(here)
+library(tidyverse)
+full_data <- readRDS(here("data", "vaccine_impact.RDS"))
+
+cume_cases <- full_data |>
+    group_by(population, scenario) |> 
+    mutate(cume_estimate = cumsum(estimate),
+           cume_estimate_lower = cumsum(lower), 
+           cume_estimate_upper = cumsum(upper)) |>
+    ungroup()
+
+
+## No vaccination
+INFANT_HOSP_NOVAC <- cume_cases |> 
+    filter(population == "infant", 
+           scenario == "observed",
+           date == max(date)) |> 
+    pull(cume_estimate) |> 
+    round() |> 
+    prettyNum(big.mark = ",")
+
+PREGNANT_HOSP_NOVAC <- cume_cases |> 
+    filter(population == "pregnant", 
+           scenario == "observed",
+           date == max(date)) |> 
+    pull(cume_estimate) |> 
+    round() |> 
+    prettyNum(big.mark = ",")
+
+## 100% vaccination
+AVERTED_INFANT_V100 <- cume_cases |>
+    filter(population == "infant",
+        scenario == "vaccine100",
+        date == max(date)) |>
+    transmute(label = sprintf("%s (95%% CI: %s - %s)",
+        prettyNum(round(cume_averted), big.mark = ","),
+        prettyNum(round(cume_averted_lower), big.mark = ","),
+        prettyNum(round(cume_averted_upper), big.mark = ","))
+    ) |> 
+    pull(label)
+
+AVERTED_PREGNANT_V100 <- cume_cases |>
+    filter(population == "pregnant",
+        scenario == "vaccine100",
+        date == max(date)) |>
+    transmute(label = sprintf("%s (95%% CI: %s - %s)",
+        prettyNum(round(cume_averted), big.mark = ","),
+        prettyNum(round(cume_averted_lower), big.mark = ","),
+        prettyNum(round(cume_averted_upper), big.mark = ","))
+    ) |> 
+    pull(label)
+
+## 50% vaccination
+AVERTED_INFANT_V50 <- cume_cases |>
+    filter(population == "infant",
+        scenario == "vaccine50",
+        date == max(date)) |>
+    transmute(label = sprintf("%s (95%% CI: %s - %s)",
+        prettyNum(round(cume_averted), big.mark = ","),
+        prettyNum(round(cume_averted_lower), big.mark = ","),
+        prettyNum(round(cume_averted_upper), big.mark = ","))
+    ) |> 
+    pull(label)
+
+AVERTED_PREGNANT_V50 <- cume_cases |>
+    filter(population == "pregnant",
+        scenario == "vaccine50",
+        date == max(date)) |>
+    transmute(label = sprintf("%s (95%% CI: %s - %s)",
+        prettyNum(round(cume_averted), big.mark = ","),
+        prettyNum(round(cume_averted_lower), big.mark = ","),
+        prettyNum(round(cume_averted_upper), big.mark = ","))
+    ) |> 
+    pull(label)
+
+## 15% vaccination
+AVERTED_INFANT_V15 <- cume_cases |>
+    filter(population == "infant",
+        scenario == "vaccine15",
+        date == max(date)) |>
+    transmute(label = sprintf("%s (95%% CI: %s - %s)",
+        prettyNum(round(cume_averted), big.mark = ","),
+        prettyNum(round(cume_averted_lower), big.mark = ","),
+        prettyNum(round(cume_averted_upper), big.mark = ","))
+    ) |> 
+    pull(label)
+
+AVERTED_PREGNANT_V15 <- cume_cases |>
+    filter(population == "pregnant",
+        scenario == "vaccine15",
+        date == max(date)) |>
+    transmute(label = sprintf("%s (95%% CI: %s - %s)",
+        prettyNum(round(cume_averted), big.mark = ","),
+        prettyNum(round(cume_averted_lower), big.mark = ","),
+        prettyNum(round(cume_averted_upper), big.mark = ","))
+    ) |> 
+    pull(label)
+```
+
+
+## Text
+
+Under a scenario without COVID-19 vaccination during pregnancy, we estimated a total of `r INFANT_HOSP_NOVAC` COVID-19 hospitalizations of young infants (in a population of 1.83 million) and `r PREGNANT_HOSP_NOVAC` COVID-19 hospitalizations of pregnant persons (in a population of 3 million) over the study period of January 2024 – May 2025. Under 50% or 100% coverage of COVID-19 vaccination during pregnancy, we estimated `r AVERTED_INFANT_V50` and `r AVERTED_INFANT_V100` averted COVID-19 hospitalizations in young infants and `r AVERTED_PREGNANT_V50` and `r AVERTED_PREGNANT_V100` averted severe COVID-19 cases in pregnant persons, respectively. However, in scenarios of low vaccine coverage (recent vaccination uptake during pregnancy: 15%), we estimated vaccination averted `r AVERTED_INFANT_V15` COVID-19 hospitalizations in young infants and `r AVERTED_PREGNANT_V15` severe cases in pregnant persons. These results are sensitive to COVID-19 incidence, clinical severity, and vaccine effectiveness estimates.
+
+## Interactive table
+
+```{r interactivetable}
+cume_cases |>
+    filter(scenario != "observed") |>
+    select(population, scenario, date, estimate, starts_with("averted")) |>
+    rowwise() |>
+    transmute(
+        population_cat = factor(population,
+            levels = c("infant", "pregnant"),
+            labels = c("Infant (0-6 months)", "Pregnant"),
+            ordered = TRUE),
+        scenario_cat = factor(scenario,
+            levels = c("vaccine15", "vaccine50", "vaccine100"),
+            labels = c("15% vaccination", "50% vaccination", "100% vaccination"),
+            ordered = TRUE),
+        date,
+        estimated_cases = estimate,
+        averted_cases = sprintf("%s (95%% CI: %s - %s)",
+            prettyNum(round(averted), big.mark = ","),
+            prettyNum(round(averted_lower), big.mark = ","),
+            prettyNum(round(averted_upper), big.mark = ","))
+    ) |>
+    arrange(population_cat, desc(scenario_cat), date) |>
+    DT::datatable(
+        colnames = c(
+            "Population",
+            "Vaccine scenario",
+            "Date",
+            "Estimated cases",
+            "Averted cases"
+        ),
+        rownames = FALSE,
+        filter = list(
+            position = "top"
+        )
+    )
+```
