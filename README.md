@@ -12,15 +12,17 @@
 
 Data and reproducible code for our *JAMA Pediatrics* research letter,
 “[Modeling the health impact of discontinuing COVID-19 vaccination
-during pregnancy in the US](TODO)”, which uses publicly-available data
-to simulate the impact of removing the COVID-19 vaccine from the
-recommended list of vaccinations for pregnant people.
+during pregnancy in the
+US](http://doi.org/10.1001/jamapediatrics.2025.3561)”, which uses
+publicly-available data to simulate the impact of removing the COVID-19
+vaccine from the recommended list of vaccinations for pregnant people.
 
 The full citation is:
 
 > Lo NC, Maldonado Y, Chu HY, Potez PJ, Kiang MV. Modeling the health
 > impact of discontinuing COVID-19 vaccination during pregnancy in the
-> US. *JAMA Pediatrics.*
+> US. *JAMA Pediatrics.* 2025 Sep 29. doi:
+> 10.1001/jamapediatrics.2025.3561
 
 ### Issues
 

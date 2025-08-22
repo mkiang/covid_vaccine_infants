@@ -35,7 +35,7 @@ generate_subplot <- function(current_data) {
             labels = scales::label_date_short(),
             expand = c(0, 1)
         ) +
-        scale_y_continuous("Number of cases",
+        scale_y_continuous("Number of hospitalizations",
             expand = c(0, 1)
         ) +
         scale_fill_manual("Scenario", values = c("grey10", ggsci::pal_jama()(4)[2:4])) +
@@ -86,7 +86,7 @@ generate_subplot <- function(current_data) {
             labels = scales::label_date_short(),
             expand = c(0, 1)
         ) +
-        scale_y_continuous("Averted cases",
+        scale_y_continuous("Averted hospitalizations",
             expand = c(0, 1)
         ) +
         theme_bw() +
