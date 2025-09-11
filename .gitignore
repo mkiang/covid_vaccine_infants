@@ -5,6 +5,7 @@ data_private/**
 code/old**
 manuscript/**
 !data_private/README.md
+proofs/**
 
 # General OS
 .DS_Store
